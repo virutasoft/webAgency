@@ -240,7 +240,7 @@ body{
 }
 
 .about .row .image img{
-    width: 50vw;
+    width: 40vw;
 }
 
 .about .row .content h3{
@@ -282,6 +282,46 @@ body{
 
 
 /* about section ends */
+
+
+/* service section starts */
+
+.services{
+    width: 100vw;
+    text-align: center;
+}
+.services .row{
+    margin: 2rem 0;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.services .row .image img{
+    width: 50vw;
+    height: 50vh;
+}
+
+.services .row .content{
+    text-align: left;
+    padding: 0 3rem;
+
+}
+
+.services .row .content h3{
+    font-size: 3rem;
+    color: var(--color);
+
+}
+.services .row .content p{
+    font-size: 1.5rem;
+    color: #333;
+    padding: 1rem 0;
+    
+}
+/* service section ends */
 
 
 
@@ -377,7 +417,17 @@ body{
 
     }
     .about .row .image img{
+        width: 100vw;
+    }
 
+    .services .row{
+        flex-flow: column-reverse;
+    }
+    .services .row:nth-child(even){
+        flex-flow: column;
+    }
+    .services .row .image img{
+        width: 100vw;
     }
 }
 
